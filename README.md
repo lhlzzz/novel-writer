@@ -10,34 +10,86 @@
 
 <br>
 
-AI-powered novel writing system for web fiction. Includes chapter management, style enforcement, and番茄-style writing standards.
+AI-powered novel writing system for web fiction. Includes chapter management, style enforcement, and writing standards.
 
 <br>
 </div>
 
 ## Features
 
-- **Writing Standards** - Complete writing methodology based on top-performing web novels
-- **Chapter Management** - Structured outline → draft → revision → final pipeline
-- **Style Enforcement** - Anti-AI-slop rules, natural paragraph flow, emotional punctuation
-- **Genre Analysis** - Deep analysis of top-ranked novels for technique extraction
-- **Quality Gates** - Automated checks for banned words, consistency, and readability
-- **Research Integration** - Market trend analysis and competitor benchmarking
+- **Writing Standards** - Complete methodology based on top-ranked web novels
+- **Chapter Management** - Outline → draft → revision → final pipeline
+- **Style Enforcement** - Anti-AI rules, natural paragraphs, emotional punctuation
+- **Genre Analysis** - Deep analysis of top-performing novels
+- **Quality Gates** - Automated checks for consistency and readability
+
+## Prerequisites
+
+| Requirement | Version | Notes |
+|-------------|---------|-------|
+| None | - | This is a content/markdown project |
+
+No software installation required. This project contains writing standards, chapter outlines, and novel content in Markdown format.
+
+## Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/lhlzzz/novel-writer.git
+cd novel-writer
+```
+
+### 2. Start reading
+
+Open any `.md` file with your preferred Markdown viewer:
+
+- **VS Code**: Open the folder, use built-in Markdown preview
+- **Typora**: Direct Markdown rendering
+- **GitHub**: Browse directly on github.com
+- **Any text editor**: Plain text reading
+
+## Quick Start
+
+### Read the master writing standard
+
+```bash
+# macOS
+open 写作手法/00_新书最终写作标准_全量全息版.md
+
+# Linux
+xdg-open 写作手法/00_新书最终写作标准_全量全息版.md
+
+# Windows
+start 写作手法/00_新书最终写作标准_全量全息版.md
+```
+
+### Browse chapter outlines
+
+```bash
+ls 我欠三百万，修bug续命/大纲/
+```
+
+### Read published chapters
+
+```bash
+ls 我欠三百万，修bug续命/正文/
+```
 
 ## Project Structure
 
 ```
 novel-writer/
 ├── 写作手法/                          # Writing methodology
-│   ├── 00_新书最终写作标准_全量全息版.md   # Master writing standard
-│   ├── 01_巅峰榜前十精读台账/            # Top-10 novel analysis cards
-│   └── 02_高层技法矩阵/                 # Advanced technique matrix
-├── 我欠三百万，修bug续命/               # Current novel project
+│   ├── 00_新书最终写作标准_全量全息版.md   # Master standard
+│   ├── 01_巅峰榜前十精读台账/            # Top-10 analysis
+│   └── 02_高层技法矩阵/                 # Advanced techniques
+├── 我欠三百万，修bug续命/               # Current novel
 │   ├── 大纲/                           # Chapter outlines
 │   ├── 正文/                           # Published chapters
-│   └── 方向B/                          # Alternative direction drafts
+│   └── 方向B/                          # Alternative drafts
 └── docs/
-    └── agents/                         # Agent documentation
+    └── agents/                         # Documentation
 ```
 
 ## Writing Standards
@@ -45,21 +97,18 @@ novel-writer/
 ### Core Principles
 
 1. **Natural Paragraphs** - No sentence-by-sentence stitching
-2. **Writer's Perspective** - Write with blood and responsibility to readers
-3. **Emotional Punctuation** - Explosions need proper punctuation, rhythm, and tone
-4. **Character Depth** - No functional characters, every character has soul
-5. **Human Feel** - Zero AI flavor, completely natural writing
+2. **Writer's Perspective** - Blood and responsibility to readers
+3. **Emotional Punctuation** - Explosions need rhythm and tone
+4. **Character Depth** - No functional characters
+5. **Human Feel** - Zero AI flavor
 
 ### Banned Patterns
 
 - System/tone words (系统味词)
 - Explanation-style narration (解释腔)
 - Short叙述段超过3行
-- Functional character dialogue
 
-## Current Novel: "I Owe 3 Million, Fix Bugs to Survive"
-
-### Chapter Progress
+## Current Novel Progress
 
 | Chapter | Title | Status |
 |---------|-------|--------|
@@ -75,37 +124,23 @@ novel-writer/
 | 010 | 这笔账不许验货 | ✅ Final |
 | 011 | 白昼旧址没有门 | 🔄 In Progress |
 
-## Usage
+## Recommended Tools
 
-### Read Writing Standards
+For the best reading/writing experience:
 
-Start with the master writing standard:
+- **VS Code** + Markdown Preview Enhanced extension
+- **Typora** - WYSIWYG Markdown editor
+- **Obsidian** - Knowledge base with Markdown
 
-```
-写作手法/00_新书最终写作标准_全量全息版.md
-```
+## Troubleshooting
 
-### Review Chapter Outlines
+### Chinese characters display incorrectly
 
-```
-我欠三百万，修bug续命/大纲/
-```
+Ensure your text editor supports UTF-8 encoding.
 
-### Check Published Chapters
+### Markdown rendering issues
 
-```
-我欠三百万，修bug续命/正文/
-```
-
-## Quality Checklist
-
-- [ ] No banned system/tone words
-- [ ] Natural paragraph flow (no sentence-by-sentence)
-- [ ] Emotional punctuation present
-- [ ] Characters have depth, not functional
-- [ ] Zero AI flavor
-- [ ] Chapter hooks are strong
-- [ ] Continuity with previous chapters
+Use a proper Markdown viewer rather than a plain text editor.
 
 ## License
 
